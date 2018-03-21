@@ -6,7 +6,7 @@ COPY ./sources.list /etc/apt/sources.list
 
 # install libs
 RUN apt-get update \
-    && apt-get install -y python3 python3-pip nginx supervisor \
+    && apt-get install -y python3 python3-pip supervisor \
     && apt-get clean --dry-run \
     && pip3 install gunicorn
 
