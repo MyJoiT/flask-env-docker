@@ -6,9 +6,9 @@ Flask-CLI==0.4.0
 Flask-Cors==3.0.4
 Flask-SQLAlchemy==2.3.2
 Flask-Migrate==2.1.1
-Flask-Restful-Fixed==0.3.6
 Flask-JWT==0.3.2
 Flask-JWT-Extended==3.9.1
+gunicorn==19.8.1
 requests==2.18.4
 pymysql==0.8.1
 pyjwt==1.4.2
