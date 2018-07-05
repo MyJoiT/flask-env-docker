@@ -1,16 +1,12 @@
 FROM debian
 
-# set source.list
-RUN rm /etc/apt/sources.list
-COPY ./sources.list /etc/apt/sources.list
-
 # install libs
 COPY ./requirements.txt /root
 
 RUN apt-get update \
     && apt-get install -y python3 python3-pip \
     && apt-get clean --dry-run \
-    && pip3 install -i https://pypi.doubanio.com/simple -r /root/requirements.txt \
+    && pip3 install -r /root/requirements.txt \
     && rm /root/requirements.txt
 
 # set env
