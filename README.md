@@ -7,13 +7,13 @@
 ### In Docker Command
 
 ``` shell
-docker pull joit/flask-env-docker
+docker pull joit/flask-env-docker:0.0.1
 ```
 
 ### In Dockerfile
 
 ``` dockerfile
-FROM joit/flask-env-docker
+FROM joit/flask-env-docker:0.0.1
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ debian lasted
 ## Requirements
 
 1. blinker==1.4
-1. eggit==0.0.4
+1. eggit==0.0.8
 1. Flask==1.0.2
 1. Flask-Admin==1.5.1
 1. Flask-CLI==0.4.0
